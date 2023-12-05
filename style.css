@@ -1,1 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+/*HEADER*/
+.headerLogin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+.headerLogin h2{
+    width: 20%;
+    text-align: center;
+}
+.headerIcons{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.headerIcons img{
+    width: 6%;
+    cursor: pointer;
+}
+.banner{
+    background-color: #ADDA87;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56vh;
+}
+.banner img{
+    width: 30%;
+}
+/*MAIN*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.mainText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+.mainText p{
+    width: 12%;
+}
+.mainText h2{
+    width: 22%;
+    text-align: center;
+}
+.product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.product button{
+    border: none;
+    border-radius: 10px;
+    background-color: #5CA720;
+    color: white;
+    width: 30%;
+    height: 8%;
+    transition: ease-in-out 1.5s;
+    cursor: pointer;
+}
+.product button:hover{
+    box-shadow: inset 12vw 0 0 0 #512200BD;
+}
+.product div{
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    justify-content: space-around;
+}
+.product img:hover{
+    opacity: 0.5;
+    transition: ease-in-out 0.5s;
+}
+.fundoVerde{
+    transition: ease-in-out 0.5s;
+    
+}
+.fundoVerde:hover{
+    background-color: #ADDA87;
+}
 
+.productTwo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+}
+.productTwo button{
+    border: none;
+    border-radius: 10px;
+    background-color: #5CA720;
+    color: white;
+    width: 30%;
+    height: 8%;
+}
+.productTwo img:hover{
+    opacity: 0.5;
+    transition: ease-in-out 0.5s;
+}
+.productTwo div{
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    justify-content: space-around;
+}
+.productThree{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.productThree img:hover{
+    opacity: 0.5;
+    transition: ease-in-out 0.5s;
+}
+.productThree button{
+    border: none;
+    border-radius: 10px;
+    background-color: #5CA720;
+    color: white;
+    width: 30%;
+    height: 8%;
+}
+.productThree div{
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    justify-content: space-around;
+}
+span{
+    color: #5CA720;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+/*FOOTER*/
+
+footer{
+    background-color: #f9f9f9;
+    height: 40vh;
+}
+.servicos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+}
+.footerText{
+    height: 20vh;
+    line-height: 5vh;
+    width: 40%;
+}
+.footerEmail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15vh;
+}
+.email input{
+    height: 8vh;
+    border: none;
+    width: 20vw;
+}
+.email input::placeholder{
+    position: relative;
+    left: 5%;
+}
+.email button{
+    background-color: #5CA720;
+    border: none;
+    height: 8vh;
+    width: 10vw;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.footerIcons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 18vh;
+}
+.iconsRede{
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconsPagamento{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25%;
+}
+.visa{
+    width: 55px;
+    height: 18px;
+}
+.master{
+    width: 56px;
+    height: 43px;
+}
+.pay{
+    width: 28px;
+    height: 33px;
+}
+
+/*TELA PARA CELULAR MÉDIO*/
+@media (max-width:768px) {
+    /*HEADER*/
+    .headerIcons img{
+        width: 10%;
+    }
+    .headerIcons{
+        width: 50%;
+    }
+    .headerLogin h2{
+        width: 38%;
+    }
+    .banner{
+        height: 30vh;
+    }
+    .banner img{
+        width: 75%;
+    }
+    /*MAIN*/
+    .mainText{
+        justify-content: space-around;
+        height: 15vh;
+    }
+    .mainText p{
+        width: 20%;
+    }
+    .product{
+        flex-wrap: wrap;
+        padding-top: 10%;
+    }
+    .productTwo{
+        flex-direction: column;
+    }
+    .productThree{
+        flex-direction: column;
+    }
+    /*FOOTER*/
+    footer{
+        height: 80vh;
+    }
+    .servicos{
+        flex-direction: column;
+        height: 60vh;
+    }
+    .footerText{
+        width: 82%;
+    }
+    .footerEmail{
+        height: 25vh;
+    }
+    .email{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 20vh;
+    }
+    .email input{
+        width: 80vw;
+    }
+    .email input::placeholder{
+        font-size: 1.1rem;
+    }
+    .email button{
+        width: 80vw;
+        font-size: 1.3rem;
+    }
+    .footerIcons{
+        justify-content: space-between;
+    }
+    .iconsRede{
+        width: 40%;
+    }
+    .iconsPagamento{
+        width: 60%;
+    }
+}
