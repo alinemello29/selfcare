@@ -36,183 +36,220 @@
     width: 30%;
 }
 /*main*/
+
 main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.principal{
+
+.corpo{
+    align-items: center;
+    height: 16vh;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 15vh;
+
 }
-.principal p{
+
+.corpo p{
     width: 12%;
 }
-.principal h2{
-    width: 22%;
+
+.corpo h2{
+    width: 23%;
     text-align: center;
 }
-.produtos{
+
+.produto{
+    margin-top: 2%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5%;
 }
-.produtos button{
+
+.produto button{
+    width: 30%;
+    height: 8%;
     border: none;
     border-radius: 10px;
     background-color: #5CA720;
     color: white;
-    width: 30%;
-    height: 8%;
-    transition: ease-in-out 1.5s;
+    transition: opacity 0.5s;
+    animation: 0.8s linear infinite;
     cursor: pointer;
 }
-.product button:hover{
+
+.produto button:hover{
     box-shadow: inset 12vw 0 0 0 #512200BD;
 }
+
 .produto div{
+    height: 65vh;
     display: flex;
     flex-direction: column;
-    height: 65vh;
     justify-content: space-around;
 }
+
 .produto img:hover{
     opacity: 0.5;
     transition: ease-in-out 0.5s;
 }
-.imagem{
+
+.flor{
     transition: ease-in-out 0.5s;
     
 }
-.imagem:hover{
+
+.flor:hover{
     background-color: #ADDA87;
 }
 
-.produtos1{
+.produto-1{
+    margin-top: 2%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 2%;
 }
-.produtos1 button{
+
+.produto-1 button{
+    width: 30%;
+    height: 8%;
     border: none;
     border-radius: 10px;
     background-color: #5CA720;
     color: white;
-    width: 30%;
-    height: 8%;
 }
-.produtos1 img:hover{
+
+.produto-1 img:hover{
     opacity: 0.5;
     transition: ease-in-out 0.5s;
 }
-.produtos div{
+
+.produto-1 div{
+    height: 65vh;
     display: flex;
     flex-direction: column;
-    height: 65vh;
     justify-content: space-around;
 }
-.produtos2{
-    display: flex;
-    justify-content: space-around;
+
+.produto-2{
     align-items: center;
     margin-top: 2%;
     margin-bottom: 2%;
+    display: flex;
+    justify-content: space-around;
 }
-.produtos2  img:hover{
+
+.produto-2 img:hover{
     opacity: 0.5;
     transition: ease-in-out 0.5s;
 }
-.produtos2 button{
+
+.produto-2 button{
+    width: 30%;
+    height: 8%;
+    transition: opacity 0.5s;
+    animation: 0.8s linear infinite;
+    cursor: pointer;
     border: none;
     border-radius: 10px;
     background-color: #5CA720;
     color: white;
-    width: 30%;
-    height: 8%;
 }
-.produtos2 div{
-    display: flex;
-    flex-direction: column;
+
+.produto-2 div{
     height: 65vh;
     justify-content: space-around;
+    display: flex;
+    flex-direction: column;
 }
+
 span{
     color: #5CA720;
-    text-decoration: underline;
     font-size: 1.2rem;
+    text-decoration: underline;
 }
+    
 /*footer*/
 
-footer{
-    background-color: #f9f9f9;
+.footer{
     height: 40vh;
+    background-color: #f9f9f9;
 }
+
 .servicos{
-    display: flex;
-    justify-content: space-around;
     align-items: center;
     height: 40vh;
+    display: flex;
+    justify-content: space-around;
 }
-.email-1{
+
+.informacao{
+    width: 40%;
     height: 20vh;
     line-height: 5vh;
-    width: 40%;
 }
-.email{
+
+.footer-email{
+    height: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 15vh;
 }
+
 .email input{
-    height: 8vh;
     border: none;
+    height: 8vh;
     width: 20vw;
 }
+
 .email input::placeholder{
-    position: relative;
     left: 5%;
+    position: relative;
 }
+
 .email button{
-    background-color: #5CA720;
     border: none;
     height: 8vh;
     width: 10vw;
+    background-color: #5CA720;
     color: white;
-    font-size: 1rem;
-    font-weight: 700;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
 }
-.footer-informacao{
+
+.rodape{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 18vh;
 }
+
 .rede-social{
-    width: 15%;
     display: flex;
     justify-content: space-evenly;
+    width: 15%;
 }
+
 .pagamento{
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
     width: 25%;
+    align-items: center;
 }
-.visa-cartao{
+
+.visa{
     width: 55px;
     height: 18px;
 }
+
 .mastercard{
     width: 56px;
     height: 43px;
 }
+
 .paypal{
     width: 28px;
     height: 33px;
@@ -220,24 +257,24 @@ footer{
 
 /*responsivo*/
 @media (max-width:768px) {
-    /*HEADER*/
-    .menu-simples img{
-        width: 10%;
-    }
+    /*header*/
     .menu-simples{
         width: 50%;
     }
-    
+    .menu-simples img{
+        width: 10%;
+    }
     .banner{
         height: 30vh;
     }
     .banner img{
         width: 75%;
     }
+    
     /*main*/
     .principal{
-        justify-content: space-around;
         height: 15vh;
+        justify-content: space-around;
     }
     .principal p{
         width: 20%;
@@ -252,6 +289,7 @@ footer{
     .produtos2{
         flex-direction: column;
     }
+    
     /*footer*/
     footer{
         height: 80vh;
@@ -267,10 +305,10 @@ footer{
         height: 25vh;
     }
     .email{
+        height: 20vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 20vh;
     }
     .email input{
         width: 80vw;
