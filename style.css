@@ -1,27 +1,27 @@
+/*google fontes latos*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
-/*HEADER*/
-.headerLogin{
+
+/*header*/
+
+.menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 15vh;
-}
-.headerLogin h2{
-    width: 20%;
-    text-align: center;
-}
-.headerIcons{
+
+.menu-simples{
     width: 30%;
     display: flex;
     justify-content: space-around;
 }
-.headerIcons img{
+.menu-simples img{
     width: 6%;
     cursor: pointer;
 }
@@ -35,32 +35,32 @@
 .banner img{
     width: 30%;
 }
-/*MAIN*/
+/*main*/
 main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.mainText{
+.principal{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 15vh;
 }
-.mainText p{
+.principal p{
     width: 12%;
 }
-.mainText h2{
+.principal h2{
     width: 22%;
     text-align: center;
 }
-.product{
+.produtos{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 5%;
 }
-.product button{
+.produtos button{
     border: none;
     border-radius: 10px;
     background-color: #5CA720;
@@ -73,31 +73,31 @@ main{
 .product button:hover{
     box-shadow: inset 12vw 0 0 0 #512200BD;
 }
-.product div{
+.produto div{
     display: flex;
     flex-direction: column;
     height: 65vh;
     justify-content: space-around;
 }
-.product img:hover{
+.produto img:hover{
     opacity: 0.5;
     transition: ease-in-out 0.5s;
 }
-.fundoVerde{
+.imagem{
     transition: ease-in-out 0.5s;
     
 }
-.fundoVerde:hover{
+.imagem:hover{
     background-color: #ADDA87;
 }
 
-.productTwo{
+.produtos1{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 2%;
 }
-.productTwo button{
+.produtos1 button{
     border: none;
     border-radius: 10px;
     background-color: #5CA720;
@@ -105,28 +105,28 @@ main{
     width: 30%;
     height: 8%;
 }
-.productTwo img:hover{
+.produtos1 img:hover{
     opacity: 0.5;
     transition: ease-in-out 0.5s;
 }
-.productTwo div{
+.produtos div{
     display: flex;
     flex-direction: column;
     height: 65vh;
     justify-content: space-around;
 }
-.productThree{
+.produtos2{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 2%;
     margin-bottom: 2%;
 }
-.productThree img:hover{
+.produtos2  img:hover{
     opacity: 0.5;
     transition: ease-in-out 0.5s;
 }
-.productThree button{
+.produtos2 button{
     border: none;
     border-radius: 10px;
     background-color: #5CA720;
@@ -134,7 +134,7 @@ main{
     width: 30%;
     height: 8%;
 }
-.productThree div{
+.produtos2 div{
     display: flex;
     flex-direction: column;
     height: 65vh;
@@ -145,7 +145,7 @@ span{
     text-decoration: underline;
     font-size: 1.2rem;
 }
-/*FOOTER*/
+/*footer*/
 
 footer{
     background-color: #f9f9f9;
@@ -157,12 +157,12 @@ footer{
     align-items: center;
     height: 40vh;
 }
-.footerText{
+.email-1{
     height: 20vh;
     line-height: 5vh;
     width: 40%;
 }
-.footerEmail{
+.email{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -188,73 +188,71 @@ footer{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.footerIcons{
+.footer-informacao{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 18vh;
 }
-.iconsRede{
+.rede-social{
     width: 15%;
     display: flex;
     justify-content: space-evenly;
 }
-.iconsPagamento{
+.pagamento{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 25%;
 }
-.visa{
+.visa-cartao{
     width: 55px;
     height: 18px;
 }
-.master{
+.mastercard{
     width: 56px;
     height: 43px;
 }
-.pay{
+.paypal{
     width: 28px;
     height: 33px;
 }
 
-/*TELA PARA CELULAR MÉDIO*/
+/*responsivo*/
 @media (max-width:768px) {
     /*HEADER*/
-    .headerIcons img{
+    .menu-simples img{
         width: 10%;
     }
-    .headerIcons{
+    .menu-simples{
         width: 50%;
     }
-    .headerLogin h2{
-        width: 38%;
-    }
+    
     .banner{
         height: 30vh;
     }
     .banner img{
         width: 75%;
     }
-    /*MAIN*/
-    .mainText{
+    /*main*/
+    .principal{
         justify-content: space-around;
         height: 15vh;
     }
-    .mainText p{
+    .principal p{
         width: 20%;
     }
-    .product{
+    .produtos{
         flex-wrap: wrap;
         padding-top: 10%;
     }
-    .productTwo{
+    .produtos1{
         flex-direction: column;
     }
-    .productThree{
+    .produtos2{
         flex-direction: column;
     }
-    /*FOOTER*/
+    /*footer*/
     footer{
         height: 80vh;
     }
@@ -262,10 +260,10 @@ footer{
         flex-direction: column;
         height: 60vh;
     }
-    .footerText{
+    .footer-informacao{
         width: 82%;
     }
-    .footerEmail{
+    .email-1{
         height: 25vh;
     }
     .email{
@@ -284,13 +282,13 @@ footer{
         width: 80vw;
         font-size: 1.3rem;
     }
-    .footerIcons{
+    .footer-rede{
         justify-content: space-between;
     }
-    .iconsRede{
+    .rede-social{
         width: 40%;
     }
-    .iconsPagamento{
+    .pagamento{
         width: 60%;
     }
 }
