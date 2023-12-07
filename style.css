@@ -1,0 +1,351 @@
+/*google fontes LATO*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+/*hader*/
+
+.login{
+    align-items: center;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    width: 23%;
+}
+
+.menu img{
+    width: 8%;
+    cursor: pointer;
+}
+
+.banner{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    background-color: #ADDA87;
+    align-items: center;
+}
+
+.banner img{
+    width: 30%;
+}
+
+/*main*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.corpo{
+    align-items: center;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.corpo p{
+    width: 12%;
+}
+
+.corpo h2{
+    width: 23%;
+    text-align: center;
+}
+
+.produto{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.produto button{
+    width: 30%;
+    height: 8%;
+    border: none;
+    border-radius: 10px;
+    background-color: #5CA720;
+    color: white;
+    transition: opacity 0.5s;
+    animation: 0.8s linear infinite;
+    cursor: pointer;
+}
+
+.produto button:hover{
+    box-shadow: inset 10vw 0 0 0 #512200BD;
+}
+
+.produto div{
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.produto img:hover{
+    opacity: 0.5;
+    transition: ease-in-out 0.5s;
+}
+
+.flor{
+    transition: ease-in-out 0.5s;
+    
+}
+
+.flor:hover{
+    background-color: #ADDA87;
+}
+
+.produto-1{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.produto-1 button{
+    width: 30%;
+    height: 8%;
+    border: none;
+    border-radius: 10px;
+    background-color: #5CA720;
+    color: white;
+}
+
+.produto-1 img:hover{
+    opacity: 0.5;
+    transition: ease-in-out 0.5s;
+}
+
+.produto-1 button:hover{
+    box-shadow: inset 10vw 0 0 0 #512200BD;
+}
+
+.produto-1 div{
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.produto-2{
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.produto-2 img:hover{
+    opacity: 0.5;
+    transition: ease-in-out 0.5s;
+}
+
+.produto-2 button{
+    width: 30%;
+    height: 8%;
+    transition: opacity 0.5s;
+    animation: 0.8s linear infinite;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #5CA720;
+    color: white;
+}
+
+.produto-2 button:hover{
+    box-shadow: inset 10vw 0 0 0 #512200BD;
+}
+
+.produto-2 div{
+    height: 70vh;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    color: #5CA720;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+/*footer*/
+
+.footer{
+    height: 30vh;
+    background-color: #f9f9f9;
+}
+
+.servicos{
+    align-items: center;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.informacao{
+    width: 60%;
+    height: 20vh;
+    line-height: 5vh;
+}
+
+.footer-email{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.email input{
+    border: none;
+    height: 7vh;
+    width: 15vw;
+}
+
+.email input::placeholder{
+    left: 5%;
+    position: relative;
+}
+
+.email button{
+    border: none;
+    height: 7vh;
+    width: 11vw;
+    background-color: #5CA720;
+    color: white;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+
+.rede-social{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.pagamento{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    align-items: center;
+}
+
+.visa{
+    width: 45px;
+    height: 20px;
+}
+
+.mastercard{
+    width: 42px;
+    height: 35px;
+}
+
+.paypal{
+    width: 22px;
+    height: 30px;
+}
+
+/*responsivo*/
+
+@media (max-width:767px) {
+
+    /*header*/
+
+    .menu img{
+        width: 10%;
+    }
+    .menu{
+        width: 50%;
+    }
+    .login h2{
+        width: 38%;
+    }
+    .banner{
+        height: 30vh;
+    }
+    .banner img{
+        width: 75%;
+    }
+
+    /*main*/
+
+    .corpo{
+        justify-content: space-around;
+        height: 15vh;
+    }
+    .corpo p{
+        width: 20%;
+    }
+    .produto{
+        flex-wrap: wrap;
+        padding-top: 10%;
+    }
+    .produto-1{
+        flex-direction: column;
+    }
+    .produto-2{
+        flex-direction: column;
+    }
+
+    /*footer*/
+    .footer{
+        height: 80vh;
+    }
+    .servicos{
+        flex-direction: column;
+        height: 60vh;
+    }
+    .informacao{
+        width: 82%;
+    }
+    .footer-email{
+        height: 25vh;
+    }
+    .email{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 20vh;
+    }
+    .email input{
+        width: 80vw;
+    }
+    .email input::placeholder{
+        font-size: 1.1rem;
+    }
+    .email button{
+        width: 80vw;
+        font-size: 1.3rem;
+    }
+    .rodape{
+        justify-content: space-between;
+    }
+    .rede-social{
+        width: 40%;
+    }
+    .pagamento{
+        width: 60%;
+    }
+}
